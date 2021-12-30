@@ -1,0 +1,47 @@
+@import 'utilities.scss';
+
+.result {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.result__action {
+  @include header;
+  font-size: 32px;
+}
+
+.scores {
+  @include resetList;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.scores__score:not(:last-child) {
+  margin-right: 20px;
+}
+
+.scores__result {
+  font-family: 'Major Mono Display', monospace;
+  color: red;
+  font-weight: 500;
+}
+
+.result__list {
+  @include resetList;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.result__item {
+  text-align: center;
+}
+
+.result__item:not(:last-child) {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Tools</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=Readex+Pro:wght@300&family=Major+Mono+Display&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+  <h1 class="visually-hidden">Rock-Paper-Scissors Game</h1>
+  <main class="wrapper">
+    <section class="rules">
+      <h2 class="visually-hidden">Game rules</h2>
+      <p class="rules__action">Let`s play</p>
+      <ul class="rules__list">
+        <li class="rules__item">
+          <p class="rules__text"><span class="text-icon text-icon--scissors">Scissors</span> beats a <span
+            class="text-icon text-icon--paper">Paper</span></p>
+        </li>
+        <li class="rules__item">
+          <p class="rules__text"><span class="text-icon text-icon--paper">Paper</span> beats <span
+            class="text-icon text-icon--rock">Rock</span></p>
+        </li>
+        <li class="rules__item">
+          <p class="rules__text"><span class="text-icon text-icon--rock">Rock</span> beats <span
+            class="text-icon text-icon--scissors">Scissors</span></p>
+        </li>
+      </ul>
+    </section>
+    <section class="game">
+      <h2 class="visually-hidden">Game pad</h2>
+      <p class="game__action">Make your choice!</p>
+      <ul class="game__buttons">
+        <li class="game__item">
+          <button class="game__button" id="btn-scissors" data-game="Scissors">
+            <img class="game__img" src="./img/hand-scissors-solid.svg" id="img-scissors" alt="Scissors" title="Scissors" width="20" >
+          </button>
+          <span class="game__button-caption">Scissors</span>
+        </li>
+        <li class="game__item">
+          <button class="game__button" id="btn-paper" data-game="Paper">
+            <img class="game__img" src="./img/hand-paper-solid.svg" id="img-paper" alt="Paper" title="Paper" width="20">
+          </button>
+          <span class="game__button-caption">Paper</span>
+        </li>
+        <li class="game__item">
+          <button class="game__button" id="btn-rock" data-game="Rock">
+            <img class="game__img" src="./img/hand-rock-solid.svg" id="img-rock" alt="Rock" title="Rock" width="20">
+          </button>
+          <span class="game__button-caption">Rock</span>
+        </li>
+      </ul>
+      <button class="game__reset" id="btn-reset">Reset game</button>
+    </section>
+    <section class="result">
+      <h2 class="visually-hidden">Game results</h2>
+      <p class="result__action">Game results</p>
+      <ul class="scores">
+        <li class="scores__score">
+          <span class="scores__player">You: </span><span class="scores__result" id="score-user">0</span>
+        </li>
+        <li class="scores__score">
+          <span class="scores__player">Computer: </span><span class="scores__result" id="score-comp">0</span>
+        </li>
+      </ul>
+      <ul class="result__list" id="result-list"></ul>
+    </section>
+  </main>
+  <footer class="footer">
+    <small class="copyright">Icons taken from <a href="https://fontawesome.com/license" target="_blank">FontAwesome</a></small>
+  </footer>
+</body>
+</html>

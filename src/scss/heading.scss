@@ -1,0 +1,44 @@
+@import 'utilities.scss';
+
+.rules {
+  margin-bottom: 20px;
+}
+
+.rules__action {
+  @include header;
+  font-size: 40px;
+}
+
+.rules__list {
+  @include resetList;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rules__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.rules__text {
+  @include resetMargPad;
+}
+
+.text-icon {
+  display: inline-block;
+  padding: 0 25px 0 0;
+  background-repeat: no-repeat;
+  background-size: 20px auto;
+  background-position: center right;
+}
+
+.text-icon--paper {
+  background-image: url('../img/hand-paper-solid.svg');
+}
+
+.text-icon--scissors {
+  background-image: url('../img/hand-scissors-solid.svg');
+}
+
+.text-icon--rock {
+  background-image: url('../img/hand-rock-solid.svg');
+}

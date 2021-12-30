@@ -1,0 +1,75 @@
+@import 'utilities.scss';
+
+.game {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.game__action {
+  @include header;
+  font-size: 32px;
+}
+
+.game__buttons {
+  @include resetList;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+
+.game__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.game__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.game__button {
+  display: grid;
+  place-items: center;
+  width: 70px;
+  height: 70px;
+  border: none;
+  background-color: rgba(73, 176, 0, 0.55);
+
+  border-radius: 1000px;
+  cursor: pointer;
+}
+
+.game__button--disabled {
+  opacity: 0.6;
+}
+
+.game__img {
+  width: 30px;
+}
+
+.game__button-caption {
+  font-size: 10px;
+}
+
+.game__reset {
+  border: 4px solid #fc9183;
+  padding: 10px 25px;
+
+  background-color: #e79d84;
+  border-radius: 30px;
+  color: rgba(255,255,255,0.8);
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.game__reset--active {
+  border: 4px solid #ff5f4e;
+  background-color: #e87d5b;
+  transform: scale(1.1);
+}

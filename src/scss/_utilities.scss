@@ -1,0 +1,17 @@
+@mixin resetList {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+@mixin resetMargPad {
+  margin: 0;
+  padding: 0;
+}
+@mixin header {
+  @include resetMargPad;
+  text-align: center;
+  font-family: 'Baloo Bhaijaan 2', cursive;
+  font-weight: 500;
+  color: $mainColor;
+}
+$mainColor: #994af2;
